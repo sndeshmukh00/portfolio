@@ -1,16 +1,30 @@
 
+<div id="header_inc"></div>
 
-<html>
   <head>
       <title>About : Shesh Narayan Deshmukh</title>
+
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
           <script src="script.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       
 
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+    
+     <script src="script.js" type="text/javascript"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>
@@ -18,15 +32,20 @@
         $(function(){
         $("#header_inc").load("header.html"); 
         $("#footer_inc").load("footer.html");
+        $("#some_of_work_no_padding_inc").load("some_of_work_no_padding.html");
+        $("#freelance_sec_inc").load("freelance_sec.html");
+        
         
         });
     </script> 
 
   </head>
    
+
+
    <body>
     
-    <div id="header_inc"></div>
+    
     
     
     
@@ -170,7 +189,7 @@
 
                                             <div class="root_content_media">
                                                 <div class="root_content_media_body_1">
-                                                    <h4>Web Devloper</h4>
+                                                    <h4>Web Developer</h4>
                                                     <p>CSIT Durg<br>(C.G.), India.<br>Since 2019.</p>
                                                 </div>
                                             </div>
@@ -338,10 +357,12 @@
         </div>
 
     </section>
+
     
-    
-    <?php include 'freelance_sec.php';?>
-    <?php include 'some_of_work_no_padding.php';?>
+    <!-- <?php include 'freelance_sec.php';?> -->
+    <div id="freelance_sec_inc"></div>
+    <!-- <?php include 'some_of_work_no_padding.php';?> -->
+    <div id="some_of_work_no_padding_inc"></div>
     <!-- <?php include 'footer.php';?> -->
     <div id="footer_inc"></div>
     
@@ -358,25 +379,25 @@
 
     
     /*For Education Button Click Start*/
-    btn_my_education.addEventListener('click', () => my_education.style.display='block')
-    btn_my_education.addEventListener('click', () => my_experience.style.display='none')
-    btn_my_education.addEventListener('click', () => btn_my_education.style.backgroundColor='#333')
-    btn_my_education.addEventListener('click', () => btn_my_education.style.color='#7fff00')
-    btn_my_education.addEventListener('click', () => btn_my_experience.style.color='')
-    btn_my_education.addEventListener('click', () => btn_my_education.style.boxShadow='0 0 10px #333,0 0 20px #333,0 0 40px #444')
-    btn_my_education.addEventListener('click', () => btn_my_experience.style.boxShadow='none')
-    btn_my_education.addEventListener('click', () => btn_my_experience.style.backgroundColor='')
+    btn_my_education.addEventListener('click', () => my_education.style.display='block');
+    btn_my_education.addEventListener('click', () => my_experience.style.display='none');
+    btn_my_education.addEventListener('click', () => btn_my_education.style.backgroundColor='#333');
+    btn_my_education.addEventListener('click', () => btn_my_education.style.color='#7fff00');
+    btn_my_education.addEventListener('click', () => btn_my_experience.style.color='');
+    btn_my_education.addEventListener('click', () => btn_my_education.style.boxShadow='0 0 10px #333,0 0 20px #333,0 0 40px #444');
+    btn_my_education.addEventListener('click', () => btn_my_experience.style.boxShadow='none');
+    btn_my_education.addEventListener('click', () => btn_my_experience.style.backgroundColor='');
     /*For Education Button Click End*/
     
     /*For Experience Button Click Start*/
-    btn_my_experience.addEventListener('click', () => btn_my_experience.style.backgroundColor='#333')
-    btn_my_experience.addEventListener('click', () => btn_my_experience.style.boxShadow='0 0 10px #333,0 0 20px #333,0 0 40px #444')
-    btn_my_experience.addEventListener('click', () => btn_my_education.style.boxShadow='none')
-    btn_my_experience.addEventListener('click', () => btn_my_experience.style.color='#7fff00')
-    btn_my_experience.addEventListener('click', () => btn_my_education.style.color='#fff')
-    btn_my_experience.addEventListener('click', () => btn_my_education.style.backgroundColor='')
-    btn_my_experience.addEventListener('click', () => my_experience.style.display='block')
-    btn_my_experience.addEventListener('click', () => my_education.style.display='none')
+    btn_my_experience.addEventListener('click', () => btn_my_experience.style.backgroundColor='#333');
+    btn_my_experience.addEventListener('click', () => btn_my_experience.style.boxShadow='0 0 10px #333,0 0 20px #333,0 0 40px #444');
+    btn_my_experience.addEventListener('click', () => btn_my_education.style.boxShadow='none');
+    btn_my_experience.addEventListener('click', () => btn_my_experience.style.color='#7fff00');
+    btn_my_experience.addEventListener('click', () => btn_my_education.style.color='#fff');
+    btn_my_experience.addEventListener('click', () => btn_my_education.style.backgroundColor='');
+    btn_my_experience.addEventListener('click', () => my_experience.style.display='block');
+    btn_my_experience.addEventListener('click', () => my_education.style.display='none');
     /*For Experience Button Click End*/
     
 /*~~~~~~~~~~~~~~Resume Button End~~~~~~~~~~~~~~~~*/
@@ -384,9 +405,21 @@
     </script>
     
         <script src="https://kit.fontawesome.com/17569c1b4f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
+    <script>
+        //menu toggler//
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('div').toggleClass('active');
+            });
+        });
+        //menu toggler end//
+    </script>
+
+    <div id="footer_inc"></div>
+
    </body>
    </html>
